@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+/* side menu */
+#menu {
+    position: fixed;
+    z-index: 3;
+    top: -40px;
+    background-color: #ffffff;
+}
+#close, #close-fast-screen {
+    color: #9E9E9E;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#timer-div {
+    width: 300px;
+    height: 150px;
+    align-items: center;
+}
+div.bar {
+        width: 25px;
+        height: 4px;
+        background-color: #9E9E9E;
+        margin: 5px 0;
+        border-radius: 2px;
+}
+#menu-container {
+    width: 80vw;
+    max-width: 300px;
+    box-shadow: 0 0 10px #cccccc;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 40px;
+}
+a li {
+    color: #4e4e4e;
+}
+a li:hover {
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+}
+li.menu-li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+#hamburger {
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+}
+div.bar {
+    background-color: #cccccc;
+}
+#close:hover, #close-fast-screen:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#close-icon {
+    margin-left: 15px;
+    font-size: 25px;
+}
+.line {
+    border-top: 1px solid #a6fa5a;
+    width: 200px;
+}
+/* main */
+main {
+    text-align: center;
+    width: 100%;
+}
+/* message / type of fast selector */
+#fasting-type {
+    position: relative;
+    width: 100vw;
+    margin: 35px auto;
+    text-align: center;
+}
+#type-selector {
+    width: 100px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 3px;
+    border: 1px solid #a6fa5a;
+}
+#type-selector:hover {
+    outline: 2px solid #a6fa5a;
+    -moz-outline-radius: 3px;
+}
+.fast-type {
+    padding-left: 15px;
+}
+#fasting-state-message {
+    color: #4e4e4e;
+    font-size: 20px;
+}
+.select-text {
+    color: #9E9E9E;
+    font-weight: 300;
+    margin-top: 10px;
+}
+/* timer display */
+.circle-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#digits-display {
+    color: #4e4e4e;
+    font-size: 3rem;
+}
+#elapsed-div {
+    color: #9E9E9E;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+#elapsed-time {
+    margin-left: 5px;
+}
+/* start and finish times */
+#start-finish-times {
+    display: flex;
+    justify-content: space-around;
+}
+.edit-time-container {
+    display: flex;
+    justify-content: center;
+}
+.start-finish {
+    color: #9E9E9E;
+}
+/* button */
+#fast-btn {
+    display: flex;
+    justify-content: center;
+}
+#start-btn, #end-btn {
+    background-color: #ffffff;
+    border: 2px solid #a6fa5a;
+    outline: none;
+    color: #4e4e4e;
+    font-weight: 600;
+    padding: 8px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+#start-btn:hover, #end-btn:hover {
+    background-color: #a5fa5a73;
+    font-weight: 700;
+}
+/* weekly progress */
+#weekly-progress-container {
+    box-shadow: inset 0 7px 9px -7px #cccccc;
+    margin-top: 10px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    padding: 15px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#graph-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    max-width: 600px;
+    width: 100%;
+}
+.graph-label {
+    font-size: 0.8rem;
+    color: #9E9E9E;
+    margin-bottom: 8px;
+}
+#graph-values {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+.graph-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graph-bar {
+    width: 16px;
+}
+.graph-eat {
+    background-image: linear-gradient(#ffffff , #E2E2E2);
+}
+.graph-fast {
+    background-image: linear-gradient(#a6fa5a , #ffffff);
+}
+
+
+/*BMI Calc div*/
+#bmi-div {
+    text-align: center;
+}
+
+.BMIinput {
+    width: 15em;
+    margin-bottom: 15px;
+}
+
+#heading {
+    text-align: center;
+    justify-content: center;
+}
+
+#results-head {
+    text-align: center;
+}
+
+#results, .results {
+    justify-content: center;
+    margin-left: 10vw;
+}
+
+
+.firstPara {
+    justify-content: center;
+    color: #4e4e4e;
+}
+
+.column {
+    justify-content: center;
+}
+/* end fast time screen */
+#end-fast-screen {
+    text-align: center;
+}
+#message-container h3 {
+    color: #9E9E9E;
+    font-size: 1.2em;
+}
+#message-container h1 {
+    font-size: 3em;
+}
+#close-fast-screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #9E9E9E;
+    padding: 10px;
+}
+#close-fast-screen h2 {
+    margin-left: 8px;
+}
+#congrats {
+    color: #a6fa5a;
+    font-size: 1.5em;
+}
